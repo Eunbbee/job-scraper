@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+
+    <!-- Google Font (귀엽고 깔끔) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu&family=Noto+Sans+KR:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Job Scraper</title>
+
+    <style>
+      body {
+        background: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470")
+          center/cover no-repeat;
+
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: "Noto Sans KR", sans-serif;
+      }
+
+      main.container {
+        background: rgba(245, 222, 241, 0.9);
+        padding: 3rem 2.5rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        max-width: 480px;
+        width: 100%;
+
+        /* 전체 가운데 정렬 */
+        text-align: center;
+      }
+
+      h1 {
+        font-family: "Gaegu", cursive;
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        color: #666;
+      }
+
+      .title-image {
+        width: 90px;
+        margin: 0.5rem auto 1.5rem;
+        display: block;
+      }
+
+      h4 {
+        color: #666;
+        margin-bottom: 2rem;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      input {
+        border-radius: 999px;
+        padding: 0.75rem 1rem;
+        text-align: center;
+        color: #252424cc;
+        background-color: #fdf4f833;
+        border-color: #e25e9733;
+      }
+
+      button {
+        border-radius: 999px;
+        margin-top: 1rem;
+        background-color: #ff9acb;
+        border: none;
+        width: 100%;
+        max-width: 220px;
+      }
+
+      button:hover {
+        background-color: #ff7fb8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>JOB SCRAPER</h1>
+      <!-- 🖼️ 제목 아래 작은 이미지 -->
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+        alt="job icon"
+        class="title-image"
+      />
+      <h4>What job do you want?</h4>
+      <form action="/search">
+        <input type="text" name="keyword" placeholder="Write keyword please" />
+        <button>Search</button>
+      </form>
+    </main>
+  </body>
+</html>
