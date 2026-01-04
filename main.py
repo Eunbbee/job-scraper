@@ -12,7 +12,7 @@ db = {
 
 @app.route("/")
 def home():
-    return render_template("home.html", name="hello")
+    return render_template("home.html", name="eb")
 
 
 @app.route("/search")
